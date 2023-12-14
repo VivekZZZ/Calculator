@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator | Theme Customisable</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="bg-img"></div>
+    <div class="app-name">
+        <span class="fancy-text">Calculator</span>
+      </div>
+    <div class="calculator light-theme dark-theme">
+        <div class="theme-change">
+            <input type="checkbox" id="themeToggle">
+            <label for="themeToggle"></label>
+        </div>
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+            <button onclick="clearResult()" class="operator-color">C</button>
+            <button onclick="appendOperator('%')" class="operator-color">%</button>
+            <button onclick="calculateSquareRoot()" class="operator-color">√</button>
+            <button onclick="appendOperator('/')" class="operator-color">/</button>
+            <button onclick="appendNumber('7')" class="text-color">7</button>
+            <button onclick="appendNumber('8')" class="text-color" >8</button>
+            <button onclick="appendNumber('9')" class="text-color">9</button>
+            <button onclick="appendOperator('*')" class="operator-color">*</button>
+            <button onclick="appendNumber('4')" class="text-color">4</button>
+            <button onclick="appendNumber('5')" class="text-color">5</button>
+            <button onclick="appendNumber('6')" class="text-color">6</button>
+            <button onclick="appendOperator('-')" class="operator-color">-</button>
+            <button onclick="appendNumber('1')" class="text-color">1</button>
+            <button onclick="appendNumber('2')" class="text-color">2</button>
+            <button onclick="appendNumber('3')" class="text-color">3</button>
+            <button onclick="appendOperator('+')" class="operator-color">+</button>
+            <button onclick="appendOperator('.')" class="text-color">.</button>
+            <button onclick="appendNumber('0')" class="text-color">0</button>
+            <button onclick="deleteLastChar()" class="operator-color">&larr;</button>
+            <button onclick="calculate()" class="operator-color">=</button>            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
